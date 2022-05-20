@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PortfolioReact/static/css/main.53337628.css",
+    "main.js": "/PortfolioReact/static/js/main.cec2b71a.js",
+    "static/media/backgroudtest.avif": "/PortfolioReact/static/media/backgroudtest.a8c20670d62174d28004.avif",
+    "index.html": "/PortfolioReact/index.html",
+    "main.53337628.css.map": "/PortfolioReact/static/css/main.53337628.css.map",
+    "main.cec2b71a.js.map": "/PortfolioReact/static/js/main.cec2b71a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53337628.css",
+    "static/js/main.cec2b71a.js"
+  ]
+}
