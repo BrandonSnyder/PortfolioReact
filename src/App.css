@@ -1,0 +1,92 @@
+:root{
+--background: #264653;
+--section1: #2a9d8f;
+--subsection1: #e9c46a;
+--subsection2: #f4a261;
+--section2: #e76f51;
+}
+body{
+ background-position: center;
+  background-image: url(../public/images/backgroudtest.avif);
+  background-size: 1250px ;
+  background-repeat: no-repeat;
+
+}
+/* start nav */
+
+header{
+  background-color: var(--section1) ;
+  color: var(--background);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:auto;  
+}
+nav  {
+  display: flex;
+  flex-direction: row;
+}
+nav a {
+  
+  color: var(--background);
+  font-weight:bolder;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+nav a:hover{
+  background-color: var(--background);
+  color: var(--section1);
+}
+ .icon a{
+  color: var(--background);
+  font-weight:bolder;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+ }
+
+/* end nav */
+/* Start Name  */
+#nameLarge{
+  width: 90%;
+  margin: auto;
+}
+/* End Name */
+
+/* start about me  */
+
+#aboutmeContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--subsection1);
+  width: 80%;
+  margin: 300px auto;
+  border-radius: 15px;
+  box-shadow: 7px 7px 5px var(--section1);
+  box-shadow: -7px -7px 5px var(--section1);
+  align-items: center;
+  color: var(--background);
+}
+
+/* end about me */
+/* start of Project section */
+.projectContainer{
+  background-color: var(--section2);
+  display: flex;
+  margin: auto;
+  width: 80%;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 7px -7px 5px var(--subsection2);
+}
+
+.projectContainer a{
+  background-color: var(--section1);
+  margin: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+}
