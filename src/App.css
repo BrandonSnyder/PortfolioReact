@@ -5,48 +5,41 @@
 --subsection2: #f4a261;
 --section2: #e76f51;
 }
-body{
- background-position: center;
-  background-image: url(../public/images/backgroudtest.avif);
-  background-size: 1250px ;
-  background-repeat: no-repeat;
+/* font styles */
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Flex', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; 
+*/
 
-}
 /* start nav */
 
-header{
-  background-color: var(--section1) ;
-  color: var(--background);
+.nav-tabs{
+background-color: #264653 ;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin:auto;  
 }
-nav  {
+.nav  {
   display: flex;
   flex-direction: row;
 }
-nav a {
-  
-  color: var(--background);
-  font-weight:bolder;
+.nav-item a {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 50px;
+  color: white  ;
   text-decoration: none;
   margin: 5px;
   padding: 5px 15px;
   border-radius: 5px;
 }
-nav a:hover{
-  background-color: var(--background);
-  color: var(--section1);
+
+nav-link:hover{
+  background-color: var(--section1);
+  color: var(--section2);
 }
- .icon a{
-  color: var(--background);
-  font-weight:bolder;
-  text-decoration: none;
-  margin: 5px;
-  padding: 5px 15px;
-  border-radius: 5px;
- }
+nav
 
 /* end nav */
 /* Start Name  */
@@ -55,13 +48,12 @@ nav a:hover{
   margin: auto;
 }
 /* End Name */
-
 /* start about me  */
-
 #aboutmeContainer{
   display: flex;
   flex-direction: column;
   background-color: var(--subsection1);
+  background-color: rgba(rgb(110, 70, 70) .8);
   width: 80%;
   margin: 300px auto;
   border-radius: 15px;
@@ -70,23 +62,4 @@ nav a:hover{
   align-items: center;
   color: var(--background);
 }
-
 /* end about me */
-/* start of Project section */
-.projectContainer{
-  background-color: var(--section2);
-  display: flex;
-  margin: auto;
-  width: 80%;
-  justify-content: space-around;
-  border-radius: 15px;
-  box-shadow: 7px -7px 5px var(--subsection2);
-}
-
-.projectContainer a{
-  background-color: var(--section1);
-  margin: 20px;
-  padding: 30px;
-  border-radius: 15px;
-  text-decoration: none;
-}

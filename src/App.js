@@ -1,16 +1,11 @@
 import './App.css';
-import Navbar from'./components/Navbar';
-import AboutMe from './components/AboutMe';
-import Project from './components/Project';
-import Name from './components/Name';
+
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Name/>
-      <AboutMe/>
-      <Project/>
+      <PortfolioContainer/>
     </div>
   )
 }
