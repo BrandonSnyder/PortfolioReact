@@ -5,11 +5,11 @@ export default function Navbar({currentPage, handlePageChange}){
         <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
+          href="#Landing"
+          onClick={() => handlePageChange('Landing')}
           //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Landing' ? 'nav-link landing' : 'nav-link'}
         >
           Home
         </a>
@@ -22,18 +22,18 @@ export default function Navbar({currentPage, handlePageChange}){
 
           className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
         >
-          About
+          About Me
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#project"
-          onClick={() => handlePageChange('Project')}
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Projects
+          Portfolio
         </a>
       </li>
       <li className="nav-item">

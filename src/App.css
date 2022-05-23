@@ -1,10 +1,11 @@
 :root{
---background: #264653;
---section1: #2a9d8f;
---subsection1: #e9c46a;
---subsection2: #f4a261;
---section2: #e76f51;
+--background: #003249;
+--primary: #80ced7;
+--secondary: #007ea7;
+--tertiary : #ccdbdc;
+--sectionBackground: #d3d6d8;
 }
+
 /* font styles */
 /* 
 font-family: 'Playfair Display', serif;
@@ -13,53 +14,314 @@ font-family: 'Source Sans Pro', sans-serif;
 */
 
 /* start nav */
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 16px;
+}
+body{
+  background-image: url(https://images.pexels.com/photos/3359912/pexels-photo-3359912.jpeg?cs=srgb&dl=pexels-ahmer-qureshi-3359912.jpg&fm=jpg);
+  background-color: #003249;
+  background-repeat:no-repeat ;
+  margin:auto;
+  background-size: 100%;
+  background-attachment:scroll;
+  font-family: 'Roboto Flex', sans-serif;
+  
+}
 
 .nav-tabs{
-background-color: #264653 ;
+  background-color: var(--background) ;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:auto;  
+  margin:0px;
+  padding: 0px;  
 }
 .nav  {
-  display: flex;
-  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  list-style-type: none;
+  
 }
-.nav-item a {
+.landing{
+  /* utilize this class to customize Landing page navbar */
+}
+.nav-link {
+  justify-content: space-around;
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 50px;
-  color: white  ;
+  font-size:30px;
+  color: white;
   text-decoration: none;
-  margin: 5px;
+  margin: 0px;
   padding: 5px 15px;
   border-radius: 5px;
 }
 
-nav-link:hover{
-  background-color: var(--section1);
+.active{
+  background-color: var(--primary);
   color: var(--section2);
 }
-nav
-
-/* end nav */
-/* Start Name  */
-#nameLarge{
-  width: 90%;
-  margin: auto;
+.nav-link:hover{
+  background-color: var(--primary);
+  color: var(--section2);
 }
-/* End Name */
+/* end nav */
+
+/* Start landing  */
+.landingContainer{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Flex', sans-serif;
+  margin:  0 auto;
+  padding: 50px;
+  width: 90%;
+  /* background-image: linear-gradient(var(--primary) 0%, var(--secondary) 100%);
+   */
+}
+.hello{
+font-size: 5rem;
+margin: 2% 0 0 0;
+color: var(--background);
+box-shadow: 0px 4px;
+}
+.landingFull{
+  font-size: 185%;
+  color: var(--secondary);
+  margin: 0px;
+}
+
+
+/* End Landing */
+
 /* start about me  */
 #aboutmeContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--subsection1);
-  background-color: rgba(rgb(110, 70, 70) .8);
-  width: 80%;
-  margin: 300px auto;
+  width: 90%;
+  padding: 100px 0 200px;
+  margin: auto;
   border-radius: 15px;
-  box-shadow: 7px 7px 5px var(--section1);
-  box-shadow: -7px -7px 5px var(--section1);
   align-items: center;
   color: var(--background);
 }
+.leftAboutMe{
+  background-color: var(--primary);
+  margin: 0 10px;
+  padding:10px;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px var(--background);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+.leftAboutMe h5{
+  padding: 0px;
+  margin: 10px auto;
+}
+.profPic{
+  width: 200px;
+  margin: auto;
+ 
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px var(--background);
+}
+.rightAboutMe{
+  margin: 0 20px 200px;
+  padding: 20px;
+  background-color:var(--primary);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px var(--background);
+  font-size: 20px;
+}
 /* end about me */
+
+/* Start Project Section */
+.projectContainer{
+  width: 80%;
+  margin: 0 auto ;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projectCard{
+  background-color: var(--background);
+  width: 35%;
+  height: 300px ;
+  margin: 30px auto ;
+  
+  border: 2px solid var(--background);
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--background);
+  background-blend-mode: soft-light;
+  transition: all 0.5s;
+}
+.projectCard:hover{
+  width: 45%;
+  height: 400px;
+  background-color: rgba(57, 166, 255, 0.3);
+}
+.project1{
+  background-image: url("./images/UNN.PNG");
+  background-size:auto;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end; 
+}
+.project2{
+  background-image: url("./images/password.JPG");
+  
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end; 
+  
+}
+.project3{
+  background-image: url("./images/jsquiz.JPG");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.project4{
+  background-image: url("./images/employed.JPG");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end; 
+}
+.cardContent{
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius:  15px;
+  align-items: center;
+}
+
+
+/* End Project Section */
+/* Start Contact Me */
+.contactContainer{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+.contactContainer p{
+  margin: 50px auto;
+  font-size: 50px;
+  color: white;
+  /* box-shadow: 5px 5px 5px var(--background); */
+  text-shadow: 2px 2px 2px #000000;
+}
+.form{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px var(--secondary);
+}
+.form h1{
+  display: flex;
+  color: white;
+  margin: 10px auto;
+}
+.inputContainer{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.in1{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 45%;
+  margin: 20px auto;
+}
+.in2{
+  display: flex;
+  flex-direction: column;
+  color: white;
+ width: 95%;
+ height: 150px;
+ margin: 20px auto;
+}
+.in2 input{
+  height: 150px;
+}
+
+.submitbtn{
+  width: 15%;
+  margin: 20px auto;
+}
+/* End Contact ME */
+/* Start Resume */
+.resumeContainer{
+  display: flex;
+  padding: 300px;
+  
+}
+.resumeContainer a{
+  display: flex;
+  align-content: center;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
+}
+.resumeContainer a:hover{
+  font-size: 55px;
+  color: #003249;
+
+}
+
+
+
+
+
+/* End Resume */
+
+/* start Footer */
+footer{
+  background: #003249;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  margin: 2px 0 0 0;
+  padding: 0px;
+}
+footer h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.employerContainer{
+  font-size: 10px;
+  margin: 10px  ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.employerContainer h2{
+  display: flex;
+  align-items: center;
+}
+
+.elogo{
+  height: 60px;
+  margin: 10px;
+}
+
+/* end Footer */

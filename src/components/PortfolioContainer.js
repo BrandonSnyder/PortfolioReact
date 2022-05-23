@@ -4,7 +4,8 @@ import Landing from './pages/Landing';
 import AboutMe from './pages/AboutMe';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import Project from './pages/Project';
+import Portfolio from './pages/Portfolio';
+import Footer from './Footer'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Landing');
@@ -15,15 +16,31 @@ export default function PortfolioContainer() {
       return <Landing />;
     }
     if (currentPage === 'AboutMe') {
-      return <AboutMe />;
+      return (
+        <div>
+          <AboutMe />
+          <Footer/>
+        </div>);
     }
-    if (currentPage === 'Project') {
-      return <Project />;
+    if (currentPage === 'Portfolio') {
+      return (
+        <div>
+          <Portfolio />
+          <Footer/>
+        </div>);
     }
     if (currentPage === 'Resume') {
-      return <Resume />;
+      return (
+        <div>
+          <Resume />
+          <Footer/>
+        </div>);
     }
-    return <Contact />;
+    return(
+    <div>
+      <Contact />
+      <Footer/>
+    </div>);
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -32,6 +49,7 @@ export default function PortfolioContainer() {
     <div>
         <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
         {renderPage()}
+        
     </div>
   );
 }
