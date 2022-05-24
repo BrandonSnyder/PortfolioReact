@@ -141,6 +141,7 @@ box-shadow: 0px 4px;
 /* end about me */
 
 /* Start Project Section */
+
 .projectContainer{
   width: 80%;
   margin: 0 auto ;
@@ -149,12 +150,30 @@ box-shadow: 0px 4px;
   flex-direction: row;
   flex-wrap: wrap;
 }
+#projectSectionDescription{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  background-color: var(--secondary);
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px var(--background);
+}
+#projectSectionDescription p{
+  color: var(--sectionBackground);
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+}
+
+
+
 .projectCard{
   background-color: var(--background);
   width: 35%;
   height: 300px ;
   margin: 30px auto ;
-  
   border: 2px solid var(--background);
   border-radius: 15px;
   text-decoration: none;
@@ -197,12 +216,13 @@ box-shadow: 0px 4px;
 .cardContent{
   background-color: var(--primary);
   width: 100%;
+  margin: 5px ;
+  padding:  0px 20px;
   display: flex;
   flex-direction: column;
   border-radius:  15px;
   align-items: center;
 }
-
 
 /* End Project Section */
 /* Start Contact Me */
@@ -222,6 +242,7 @@ box-shadow: 0px 4px;
 .form{
   display: flex;
   width: 90%;
+  font-size: 30px;
   margin: auto;
   flex-direction: column;
   background-color: var(--background);
@@ -233,6 +254,7 @@ box-shadow: 0px 4px;
   display: flex;
   color: white;
   margin: 10px auto;
+  text-shadow: 2px 2px 2px  #000000;
 }
 .inputContainer{
   margin: auto;
@@ -325,3 +347,88 @@ footer h1 {
 }
 
 /* end Footer */
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-link{
+    font-size: 13px;
+  }
+  .hello{
+    font-size: 20px;
+  }
+  .landingContainer{
+    display: flex;
+    background-image: url(https://images.pexels.com/photos/3359912/pexels-photo-3359912.jpeg?cs=srgb&dl=pexels-ahmer-qureshi-3359912.jpg&fm=jpg);
+    background-size:cover;
+    width: 90%;
+    height:200px;
+  }
+  .landingFull{
+    font-size: 15px;;
+  }
+#aboutmeContainer{
+  flex-direction: column;
+  
+}
+.leftAboutMe{
+  width: 90%;
+ margin: 40px auto;
+}
+.rightAboutMe{
+ width: 90%;
+ margin: 40px auto;
+
+}
+footer{
+  align-items: center;
+}
+.employerContainer{
+  flex-direction: column;
+  
+}
+
+.employerContainer img{
+  width: auto;
+  margin: 20px auto;
+}
+.contactContainer p{
+  font-size: 20px;
+}
+.form{
+  background-color: var(--secondary);
+  box-shadow: none;
+}
+.submitbtn{
+  padding: 2px;
+}
+.resumeContainer{
+  padding: 100px 20px;
+}
+.resumeContainer a{
+align-items: center;
+margin: auto;
+padding: 20px;
+}
+.projectContainer{
+  width: 90%;
+}
+.projectCard{
+  width: 90%;
+}
+.projectCard:hover{
+  width: 90%;
+  height: 450px;
+}
+
+
+
+
+
+
+
+}
