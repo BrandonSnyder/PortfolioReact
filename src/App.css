@@ -1,6 +1,6 @@
 :root{
 --background: #003249;
---primary: #80ced7;
+--primary: #79BAF2;
 --secondary: #007ea7;
 --tertiary : #ccdbdc;
 --sectionBackground: #d3d6d8;
@@ -36,8 +36,8 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:0px;
-  padding: 0px;  
+  margin: 0px;
+  padding: 20px;  
 }
 .nav  {
   position: fixed;
@@ -64,6 +64,7 @@ body{
   color: var(--section2);
 }
 .nav-link:hover{
+  transition: 2s;
   background-color: var(--primary);
   color: var(--section2);
 }
@@ -76,20 +77,19 @@ body{
   font-family: 'Roboto Flex', sans-serif;
   margin:  0 auto;
   padding: 50px;
-  width: 90%;
-  /* background-image: linear-gradient(var(--primary) 0%, var(--secondary) 100%);
-   */
+  width: 1280;
+ 
 }
 .hello{
 font-size: 5rem;
-margin: 2% 0 0 0;
+margin: 2% 0 0px 0;
 color: var(--background);
 box-shadow: 0px 4px;
 }
 .landingFull{
   font-size: 185%;
   color: var(--secondary);
-  margin: 0px;
+  margin: 10px 0px;
 }
 
 
@@ -113,29 +113,48 @@ box-shadow: 0px 4px;
   padding:10px;
   width: 50%;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px var(--background);
+  box-shadow: 5px 5px 10px var(--background);
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 20px;
+  
 }
+
 .leftAboutMe h5{
   padding: 0px;
   margin: 10px auto;
 }
+#aboutMeLeftDivTitle{
+  font-size: 30px;
+}
 .profPic{
-  width: 200px;
+  width: 300px;
   margin: auto;
- 
   border-radius: 15px;
-  box-shadow: 3px 3px 5px var(--background);
+
+}
+
+.profileLinks{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 30px;
+  padding: 40px 0px;
+  color: var(--background);
+}
+
+.profileLinks a{
+  color: var(--background);
 }
 .rightAboutMe{
   margin: 0 20px 200px;
-  padding: 20px;
+  padding: 0px 20px;
   background-color:var(--primary);
   border-radius: 15px;
-  box-shadow: 5px 5px 5px var(--background);
+  box-shadow: 5px 5px 10px var(--background);
   font-size: 20px;
 }
 /* end about me */
@@ -143,9 +162,10 @@ box-shadow: 0px 4px;
 /* Start Project Section */
 
 .projectContainer{
+  
   width: 80%;
   margin: 0 auto ;
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,13 +209,14 @@ box-shadow: 0px 4px;
 .project1{
   background-image: url("./images/UNN.PNG");
   background-size:auto;
+  background-position-x: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end; 
 }
 .project2{
   background-image: url("./images/password.JPG");
-  
+  background-position-x: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end; 
@@ -204,14 +225,25 @@ box-shadow: 0px 4px;
 .project3{
   background-image: url("./images/jsquiz.JPG");
   background-repeat: no-repeat;
+  background-position-x: center;
   display: flex;
   align-items: flex-end;
 }
 .project4{
   background-image: url("./images/employed.JPG");
+  background-position-x: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end; 
+}
+
+.project5{
+  background-image: url("./images/cachemarketshot.JPG");
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
 }
 .cardContent{
   background-color: var(--primary);
@@ -290,20 +322,20 @@ box-shadow: 0px 4px;
 /* Start Resume */
 .resumeContainer{
   display: flex;
-  padding: 300px;
+  padding: 30px;
   
 }
 .resumeContainer a{
   display: flex;
   align-content: center;
   margin: auto;
-  color: white;
+  color: var(--background);
   text-decoration: none;
   text-align: center;
   transition: all 0.5s;
 }
 .resumeContainer a:hover{
-  font-size: 55px;
+  font-size: 35px;
   color: #003249;
 
 }
@@ -318,6 +350,10 @@ box-shadow: 0px 4px;
 footer{
   background: #003249;
   display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   flex-direction: column;
   color: var(--primary);
   margin: 2px 0 0 0;
@@ -384,8 +420,16 @@ footer h1 {
  margin: 40px auto;
 
 }
+.resumeContainer a:hover{
+  background-color: var(--background);
+  border-radius: 20px;
+  font-size: 30px;
+  color: var(--sectionBackground);
+
+}
 footer{
   align-items: center;
+  display: none;
 }
 .employerContainer{
   flex-direction: column;
@@ -424,11 +468,5 @@ padding: 20px;
   width: 90%;
   height: 450px;
 }
-
-
-
-
-
-
 
 }
