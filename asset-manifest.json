@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/PortfolioReact/static/css/main.80c399fe.css",
-    "main.js": "/PortfolioReact/static/js/main.460a126e.js",
+    "main.css": "/PortfolioReact/static/css/main.e4ea111e.css",
+    "main.js": "/PortfolioReact/static/js/main.ebcdd882.js",
     "static/media/profpic.jpg": "/PortfolioReact/static/media/profpic.f83714651329a821c2c4.jpg",
     "static/media/UNN.PNG": "/PortfolioReact/static/media/UNN.60906ddc12afe91ac410.PNG",
     "static/media/NAVSEAlogo.jpg": "/PortfolioReact/static/media/NAVSEAlogo.0be0942a140eac23ef9d.jpg",
     "static/media/employed.JPG": "/PortfolioReact/static/media/employed.ac50e3c6cfbc5b23a6d1.JPG",
     "static/media/password.JPG": "/PortfolioReact/static/media/password.cadd62c8096716132e07.JPG",
+    "static/media/cachemarketshot.JPG": "/PortfolioReact/static/media/cachemarketshot.2c8a440bc097205c6463.JPG",
     "static/media/jsquiz.JPG": "/PortfolioReact/static/media/jsquiz.f3a89941a718435a1bda.JPG",
     "index.html": "/PortfolioReact/index.html",
-    "main.80c399fe.css.map": "/PortfolioReact/static/css/main.80c399fe.css.map",
-    "main.460a126e.js.map": "/PortfolioReact/static/js/main.460a126e.js.map"
+    "main.e4ea111e.css.map": "/PortfolioReact/static/css/main.e4ea111e.css.map",
+    "main.ebcdd882.js.map": "/PortfolioReact/static/js/main.ebcdd882.js.map"
   },
   "entrypoints": [
-    "static/css/main.80c399fe.css",
-    "static/js/main.460a126e.js"
+    "static/css/main.e4ea111e.css",
+    "static/js/main.ebcdd882.js"
   ]
 }
