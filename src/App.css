@@ -1,5 +1,5 @@
 :root{
---orange:#f66408;
+--orange:#22aaa1;
 --gray:#333;
 --UNBlue:#4a8fe7;
 --seagreen: #22aaa1;
@@ -64,6 +64,7 @@ body{
   background-color: var(--gray);
   color: #ffffff;
 }
+
 /* end nav */
 
 /* start about me  */
@@ -119,6 +120,7 @@ body{
 }
 
 .profileLinks a{
+  font-size: 40px;
   color: var(--orange);
 }
 .rightAboutMe{
@@ -217,12 +219,18 @@ body{
   align-items: flex-end; 
   
 }
+.project2 div h2,.project2 div h3, .project2 div h5 {
+  color: var(--orange);
+}
 .project3{
   background-image: url("./images/jsquiz.JPG");
   background-repeat: no-repeat;
   background-position-x: center;
   display: flex;
   align-items: flex-end;
+}
+.project3 div h2,.project3 div h3, .project3 div h5 {
+  color: var(--orange);
 }
 .project4{
   background-image: url("./images/employed.JPG");
@@ -233,7 +241,7 @@ body{
   align-items: flex-end; 
 }
 .project4 div h2,.project4 div h3, .project4 div h5 {
-  color: var(--orange);
+  color: #da6b10;
 }
 
 .project5{
@@ -296,6 +304,7 @@ color: #ffffff;
 }
 .resumeContainer a{
   display: flex;
+  font-size: 25px;
   align-content: center;
   margin: auto;
   color: var(--background);
@@ -304,9 +313,11 @@ color: #ffffff;
   transition: all 0.5s;
 }
 .resumeContainer a:hover{
- 
+  background-color: #ffffff;
+  font-weight: 800;
   color: var(--orange);
-
+  padding: 10px;
+  box-shadow: 5px 5px 5px var(--orange);
 }
 
 
@@ -401,10 +412,10 @@ footer h2, a{
 
 }
 .resumeContainer a:hover{
-  background-color: var(--background);
+  background-color: #ffffff;
   border-radius: 20px;
   font-size: 30px;
-  color: var(--sectionBackground);
+  color: var(--gray);
 
 }
 footer{

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Landing from './pages/Landing';
 import AboutMe from './pages/AboutMe';
-import Resume from './pages/Resume';
+import FreelanceWork from './pages/FreelanceWork';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Footer from './Footer'
@@ -29,10 +29,10 @@ export default function PortfolioContainer() {
           <Footer/>
         </div>);
     }
-    if (currentPage === 'Resume') {
+    if (currentPage === 'FreelanceWork') {
       return (
         <div>
-          <Resume />
+          <FreelanceWork />
           <Footer/>
         </div>);
     }

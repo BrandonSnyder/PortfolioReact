@@ -30,13 +30,13 @@ export default function Navbar({ currentPage, handlePageChange }) {
           Contact me
         </a>
         {/* <a
-              href="#aboutme"
-              onClick={() => handlePageChange("AboutMe")}
+              href="#FreelanceWork"
+              onClick={() => handlePageChange("FreelanceWork")}
               className={
-                currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+                currentPage === "FreelanceWork" ? "nav-link active" : "nav-link"
               }
             >
-              About Me
+              Freelance Work
             </a> */}
       </div>
     </div>
