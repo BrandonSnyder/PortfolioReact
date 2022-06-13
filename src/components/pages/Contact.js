@@ -1,4 +1,10 @@
 import React, {useState} from 'react';
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFillEnvelopeFill,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 
 export default function Contact(){
 
@@ -37,49 +43,24 @@ export default function Contact(){
 
     return(
         <section className='contactContainer'>
-      <p>Hello {name}</p>
-      <form className="form">
-        <h1>Contact Me</h1>
-            <div className='inputContainer'>
-                    <div className='in1'>
-                        <label for="name">Name</label>
-                        <input 
-                    value={name}
-                    name="name"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="name"
-                    />
-                    </div>
-                    <div className='in1'>
-                    <label for="name">Email</label>
-                      <input 
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    type="email"
-                    placeholder="email"
-                    />  
-                    </div>
-                    <div className='in2'>
-                        <label for="message">Message</label>
-                      <input 
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="message"
-                    />  
-                    </div>
-                    
-            </div>
-            
-            
-        {/* TODO Add a `onChange` attribute with a value of `handleInputChange` */}
-        <button className='submitbtn' type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
+          <p>Contact Me</p>
+          <a href="mailto:Brandon.Snyder019@gmail.com? subject=Good Afternoon">
+            {" "}
+            <BsFillEnvelopeFill />  Brandon.Snyder019@gmail.com
+          </a>
+          <a href="tel:7576467117">
+            {" "}
+            <BsFillTelephoneFill />  757 646 7117
+          </a>
+          <p>Follow Me </p>
+          <a href="https://www.linkedin.com/in/brandonlsnyder/">
+            {" "}
+            <BsLinkedin /> www.linkedin.com/in/brandonlsnyder
+          </a>
+          <a href="https://github.com/BrandonSnyder">
+            {" "}
+            <BsGithub /> github.com/BrandonSnyder
+          </a>               
     </section>
   );
       }

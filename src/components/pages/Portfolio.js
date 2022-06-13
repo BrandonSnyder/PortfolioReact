@@ -4,9 +4,7 @@ export default function Portfolio(){
     return(
         <section className='projectContainer'>
             <section id='projectSectionDescription'>
-            
-                <p>All of these projects have a feature that it was built around. Focusing on only a key feature while building these applications allowed me to keep my code simple and quick to reference. All of these project adn more can be found on my GitHub.</p>
-                
+                            
             </section>
             <a class="projectCard project5" href="https://cachemarket.herokuapp.com/">
                 <div className='cardContent'> 
