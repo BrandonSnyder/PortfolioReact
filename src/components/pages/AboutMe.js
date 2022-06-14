@@ -38,7 +38,7 @@ export default function AboutMe() {
             href="https://drive.google.com/file/d/1HVLL1NnDY48M19PEnfc9_FXe_lsJbN2y/view?usp=sharing"
             download
           >
-            Click to Download Resume
+           
           </a>
         </div>
       </div>

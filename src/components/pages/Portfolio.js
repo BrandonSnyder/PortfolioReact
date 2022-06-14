@@ -18,7 +18,14 @@ export default function Portfolio(){
                 <div className='cardContent'> 
                     <h2>Ukraine-News-Now</h2>
                     <h3>HTML/CSS/JavaScript</h3>
-                    <h5>This project was focused on utilizing information from outside databases through API's</h5>
+                    <h5>This project was focused on utilizing information from outside databases through API calls</h5>
+                </div>
+            </a>
+            <a class="projectCard project6" href="https://brandonsnyder.github.io/WeatherAPI/">
+                <div className='cardContent'> 
+                    <h2>Weather API</h2>
+                    <h3>HTML/CSS/JavaScript</h3>
+                    <h5>This project was focused on utilizing information from outside databases through API calls</h5>
                 </div>
             </a>
             <a class="projectCard project2" href="https://brandonsnyder.github.io/passwordGenerator/">

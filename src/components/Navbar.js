@@ -10,7 +10,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange("Landing")}
           className={currentPage === "Landing" ? "nav-link active" : "nav-link"}
         >
-          About Me
+          Home
         </a>
 
         <a

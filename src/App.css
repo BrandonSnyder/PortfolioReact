@@ -5,6 +5,7 @@
 --seagreen: #22aaa1;
 --cachemarket: #9BD33E;
 --ukraineYellow: #ffd500;
+--weatherApi: #FFA500;
 }
 
 /* font styles */
@@ -255,6 +256,18 @@ body{
 .project5 div h2,.project5 div h3,.project5 div h5{
   color: var(--cachemarket);
 }
+.project6{
+  background-image: url("./images/weatherapi.JPG");
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.project6 div h2,.project6 div h3,.project6 div h5{
+  color: var(--weatherApi);
+}
+
 .cardContent{
   background-color: var(--gray);
   width: 100%;
@@ -317,7 +330,8 @@ color: #ffffff;
   font-weight: 800;
   color: var(--orange);
   padding: 10px;
-  box-shadow: 5px 5px 5px var(--orange);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--orange);
 }
 
 
