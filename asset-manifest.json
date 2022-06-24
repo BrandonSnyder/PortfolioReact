@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioReact/static/css/main.ce6e5f7b.css",
-    "main.js": "/PortfolioReact/static/js/main.a529e02c.js",
+    "main.css": "/PortfolioReact/static/css/main.2c921f53.css",
+    "main.js": "/PortfolioReact/static/js/main.b5e6b44e.js",
     "static/media/profpic.jpg": "/PortfolioReact/static/media/profpic.f83714651329a821c2c4.jpg",
     "static/media/UNN.PNG": "/PortfolioReact/static/media/UNN.60906ddc12afe91ac410.PNG",
     "static/media/NAVSEAlogo.jpg": "/PortfolioReact/static/media/NAVSEAlogo.0be0942a140eac23ef9d.jpg",
@@ -11,11 +11,11 @@
     "static/media/cachemarketshot.JPG": "/PortfolioReact/static/media/cachemarketshot.2c8a440bc097205c6463.JPG",
     "static/media/jsquiz.JPG": "/PortfolioReact/static/media/jsquiz.f3a89941a718435a1bda.JPG",
     "index.html": "/PortfolioReact/index.html",
-    "main.ce6e5f7b.css.map": "/PortfolioReact/static/css/main.ce6e5f7b.css.map",
-    "main.a529e02c.js.map": "/PortfolioReact/static/js/main.a529e02c.js.map"
+    "main.2c921f53.css.map": "/PortfolioReact/static/css/main.2c921f53.css.map",
+    "main.b5e6b44e.js.map": "/PortfolioReact/static/js/main.b5e6b44e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce6e5f7b.css",
-    "static/js/main.a529e02c.js"
+    "static/css/main.2c921f53.css",
+    "static/js/main.b5e6b44e.js"
   ]
 }
