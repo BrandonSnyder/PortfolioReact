@@ -5,7 +5,7 @@ import {
   BsLinkedin,
   BsFillEnvelopeFill,
   BsFillTelephoneFill,
-} from "react-icons/bs";
+} from "react-icons/bs" ;
 
 export default function Landing() {
   return (
@@ -35,13 +35,12 @@ export default function Landing() {
       <div className="rightAboutMe">
         <h2>Biography</h2>
         <p>
-          Hi, I'm Brandon Snyder, currently working as a freelance web
+          Hello, I'm Brandon Snyder, currently working as a freelance web
           developer. I have a Bachelors degree in Mechanical Engineering and am
           a recent Georgia Institute of Technology Full Stack Bootcamp Graduate.
         </p>
         <p>
-          My passions lie in helping others, problem solving, and working in
-          tight niche groups of like minded people.
+          My passions lie in helping others, problem solving, and working in cross-functional teams.
         </p>
         <div>
           <h2 className="skillsHeader">Skills</h2>
